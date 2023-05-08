@@ -1,0 +1,21 @@
+/*=========== fonts ============= */
+:root {
+  --body-clr:rgb(215, 214, 214);
+  --black-clr: black;
+  --orange-clr: #f1c40f;
+}
+/*=========== Reusebale classes ============= */
+/*=========== Header ============= */
+/*=========== fonts ============= */
+/*=========== fonts ============= */
+/*=========== footer ============= */
+/*=========== Responsivness ============= */
+
+@media screen (min-width: 560px){
+    
+}
+
+.fa-solid {
+    color: var(--orange-clr);
+    font-size: 5rem;
+}
