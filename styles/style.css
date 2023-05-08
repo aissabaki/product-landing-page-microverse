@@ -1,21 +1,145 @@
 /*=========== fonts ============= */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Source+Code+Pro:wght@300;500&display=swap');
+
+/*=========== Css vars ============= */
+
 :root {
-  --body-clr:rgb(215, 214, 214);
+  --body-clr: hsl(0, 7%, 92%);
   --black-clr: black;
   --orange-clr: #f1c40f;
 }
 /*=========== Reusebale classes ============= */
+body {
+  box-sizing: border-box;
+  margin: 0%;
+  background-color: var(--body-clr);
+  font-family: 'Lato', sans-serif;
+}
+section {
+  padding: 2.5rem;
+}
+.flex-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}
 /*=========== Header ============= */
-/*=========== fonts ============= */
-/*=========== fonts ============= */
-/*=========== footer ============= */
-/*=========== Responsivness ============= */
-
-@media screen (min-width: 560px){
-    
+header {
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.logo img {
+  width: 20rem;
+  height: auto;
+}
+
+/*   navbar  */
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-bar li {
+  list-style-type: none;
+  padding: 0 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+/*=========== Introduction ============= */
+.introduction > * {
+  margin: 0.5rem auto;
+}
+.introduction-title {
+  font-style: 1.5rem;
+}
+
+.introduction > input {
+  width: 20vw;
+  padding: 0.5rem;
+}
+.introduction-btn,
+.card-btn {
+  padding: 0.5rem 0.8rem;
+  color: var(--black-clr);
+  background-color: var(--orange-clr);
+  border: none;
+  font-weight: bolder;
+}
+
+/*=========== services-section ============= */
+.service-card {
+  max-width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3rem;
+  margin: 1rem auto;
+}
 .fa-solid {
-    color: var(--orange-clr);
-    font-size: 5rem;
+  font-size: 3rem;
+  color: darkorange;
+}
+/*=========== Pricing-section ============= */
+.pricing-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 3rem;
+}
+.card {
+  width: fit-content;
+  position: relative;
+  padding: 1rem 0;
+  border: 0.5px solid black;
+  border-radius: 2px;
+  text-align: center;
+}
+.card > * {
+  margin-bottom: 1rem;
+}
+.card-title {
+  margin-top: -1rem;
+  max-width: 100%;
+  padding: 1rem;
+  background-color: lightgray;
+}
+.card-price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.card-content {
+  max-width: 60%;
+  margin: 2rem auto;
+}
+/*=========== footer ============= */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin: 1.5rem 3rem;
+  margin-bottom: 0;
+  padding: 1rem;
+  background-color: lightgray;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+}
+footer ul a {
+  text-decoration: none;
+  margin-left: 0.5rem;
+  color: black;
 }
